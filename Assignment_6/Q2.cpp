@@ -15,7 +15,7 @@ public:
     void insert(int value) {
         Node* newNode = new Node;
         newNode->data = value;
-//yaha pe addition is similar as the first one
+     
         if (head == nullptr) {
             head = newNode;
             newNode->next = head; 
@@ -39,7 +39,7 @@ public:
             temp = temp->next;
         } while (temp != head);
 
-        cout << head->data << endl; // head ko hi dobar print kiya
+        cout << head->data << endl;
     }
 };
 int main() {
